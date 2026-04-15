@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Momo no Yado — An entire traditional Japanese kominka guesthouse for private rental in Kuwana, Mie. 14 min from Nagashima Spaland. Up to 8 guests.">
+  <meta property="og:title" content="Momo no Yado | Traditional Japanese Guesthouse in Kuwana, Mie">
+  <meta property="og:description" content="Entire traditional kominka guesthouse for private rental. 14 min from Nagashima Spaland. Up to 8 guests.">
+  <meta property="og:type" content="website">
+  <title>Momo no Yado | Traditional Japanese Guesthouse — Kuwana, Mie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Language Switcher */
+    .lang-switcher {
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+      margin-left: 1.5rem;
+    }
+    .lang-btn {
+      font-family: var(--font-en);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      padding: 0.25rem 0.6rem;
+      border: 1px solid rgba(201,169,110,0.4);
+      color: var(--color-text-muted);
+      text-decoration: none;
+      border-radius: 2px;
+      transition: all 0.2s;
+    }
+    .lang-btn:hover { color: var(--color-gold); border-color: var(--color-gold); }
+    .lang-btn--active { color: var(--color-gold); border-color: var(--color-gold); }
+    .header__inner { display: flex; align-items: center; }
+    @media (max-width: 768px) {
+      .lang-switcher { margin-left: auto; margin-right: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Auto language detection -->
+  <script>
+    if (!sessionStorage.getItem('lang-chosen')) {
+      const lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+      if (lang.startsWith('ja')) {
+        sessionStorage.setItem('lang-chosen', 'ja');
+        window.location.href = 'index.html';
+      }
+    }
+  </script>
+
+  <!-- HEADER -->
+  <header id="site-header" class="header header--transparent">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <span class="logo-ja">百の宿</span>
+        <span class="logo-en">MOMO NO YADO — Nagashima &amp; Nagoya</span>
+      </a>
+      <button class="header__menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header__nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#concept">Concept</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#guide">Guide</a></li>
+          <li><a href="#access">Access</a></li>
+          <li><a href="#notice">Notice</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#booking" class="nav-cta">Book Now</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switcher">
+        <a href="index.html" class="lang-btn">日本語</a>
+        <a href="en.html" class="lang-btn lang-btn--active">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-label="Main visual">
+      <div class="hero__slideshow">
+        <div class="hero__slide hero__slide--active" data-src="images/exterior.jpg" aria-hidden="true"></div>
+        <div class="hero__slide" data-src="images/entrance.jpg" aria-hidden="true"></div>
+        <div class="hero__slide" data-src="images/dining-night.jpg" aria-hidden="true"></div>
+        <div class="hero__slide" data-src="images/dining-day.jpg" aria-hidden="true"></div>
+        <div class="hero__slide" data-src="images/bedroom1.jpg" aria-hidden="true"></div>
+        <div class="hero__slide" data-src="images/bedroom3.jpg" aria-hidden="true"></div>
+        <div class="hero__slide" data-src="images/bedroom2.jpg" aria-hidden="true"></div>
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Nagashima &amp; Nagoya</p>
+        <h1 class="hero__title">百の宿</h1>
+        <p class="hero__reading">Momo no yado</p>
+        <p class="hero__subtitle">A century-old Japanese farmhouse,<br>yours alone to enjoy.</p>
+        <a href="#booking" class="btn btn--primary">Check Availability</a>
+      </div>
+      <div class="hero__dots" aria-label="Slide navigation">
+        <button class="hero__dot hero__dot--active" aria-label="Slide 1"></button>
+        <button class="hero__dot" aria-label="Slide 2"></button>
+        <button class="hero__dot" aria-label="Slide 3"></button>
+        <button class="hero__dot" aria-label="Slide 4"></button>
+        <button class="hero__dot" aria-label="Slide 5"></button>
+        <button class="hero__dot" aria-label="Slide 6"></button>
+        <button class="hero__dot" aria-label="Slide 7"></button>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>SCROLL</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- CONCEPT -->
+    <section id="concept" class="section concept">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Our Concept</p>
+          <h2 class="section__title">A Different Kind<br>of Everyday</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </div>
+        <div class="concept__grid">
+          <div class="concept__text">
+            <p class="concept__lead">
+              Momo no Yado is an entire traditional kominka farmhouse,<br>lovingly restored and available for private rental in Kuwana, Mie.
+            </p>
+            <p class="concept__body">
+              Heavy wooden beams and the warmth of earthen walls — a space carefully preserved by generations past, now blended naturally with modern comforts.
+            </p>
+            <p class="concept__body">
+              Just 14 minutes by car from Nagashima Spaland. After a full day of adventure, come home to Momo no Yado and unwind at your own pace. Meals shared around the table, quiet time in your own room — moments here become lasting memories of your journey.
+            </p>
+            <ul class="concept__pillars">
+              <li class="pillar">
+                <span class="pillar__icon" aria-hidden="true">一</span>
+                <div class="pillar__text">
+                  <strong>Entire House Rental</strong>
+                  <span>Up to 8 guests. The whole property is yours — no other guests.</span>
+                </div>
+              </li>
+              <li class="pillar">
+                <span class="pillar__icon" aria-hidden="true">古</span>
+                <div class="pillar__text">
+                  <strong>Historic Character</strong>
+                  <span>Original beams and earthen walls carry the warmth of generations past.</span>
+                </div>
+              </li>
+              <li class="pillar">
+                <span class="pillar__icon" aria-hidden="true">新</span>
+                <div class="pillar__text">
+                  <strong>Modern Comforts</strong>
+                  <span>Bath, AC, Wi-Fi and a fully equipped kitchen. Nothing missing.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="concept__image-wrap">
+            <img src="images/dining-day.jpg" alt="Bright living and dining area at Momo no Yado with natural light and Scandinavian furniture" loading="lazy" width="640" height="800">
+            <div class="concept__image-accent" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOMS & FACILITIES -->
+    <section id="rooms" class="section rooms">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Facilities &amp; Rooms</p>
+          <h2 class="section__title">Rooms &amp; Facilities</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+          <p class="section__desc">The entire property is reserved exclusively for your group.</p>
+        </div>
+        <div class="rooms__grid">
+
+          <article class="room-card room-card--wide">
+            <div class="room-card__image-wrap">
+              <img src="images/entrance.jpg" alt="Entrance of Momo no Yado with circular window, bamboo lattice and earthen walls" loading="lazy" width="900" height="1200">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Entrance — Genkan</p>
+              <h3 class="room-card__title">Entrance — Where the Journey Begins</h3>
+              <p class="room-card__desc">Soft light through a circular window. The bamboo lattice and earthen walls of this entryway feel like a warm homecoming every time you arrive. Take a breath in the earthen vestibule before stepping inside.</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/exterior.jpg" alt="Exterior of Momo no Yado — traditional tiled roof and wooden entrance door" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Exterior</p>
+              <h3 class="room-card__title">Exterior — Single-Story Living</h3>
+              <p class="room-card__desc">A heavy traditional tiled roof atop a single-story house with no stairs. Accessible and comfortable for young children and elderly guests alike. Step through the wooden door and enter a space that transcends time.</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/kitchen.jpg" alt="Kitchen at Momo no Yado with large sink, gas stove, refrigerator and cooking equipment" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Kitchen</p>
+              <h3 class="room-card__title">Kitchen — The Family Kitchen</h3>
+              <p class="room-card__desc">A large sink, gas stove, refrigerator/freezer, microwave, rice cooker, a full set of cookware and tableware (including children's dishes) — everything you need to cook for all 8 guests with ease.</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/dining-night.jpg" alt="Evening dining room with warm washi paper pendant lamp and 8-seat table" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Dining Room — Evening</p>
+              <h3 class="room-card__title">Dining — Evening Gathering</h3>
+              <p class="room-card__desc">A large dining table for 8, lit by the gentle glow of a washi paper pendant lamp. The perfect setting for a special evening with family or friends.</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/dining-day.jpg" alt="Bright daytime living and dining area with Scandinavian furniture and tokonoma alcove" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Living &amp; Dining — Daytime</p>
+              <h3 class="room-card__title">Living Room — Daytime Comfort</h3>
+              <p class="room-card__desc">Flooded with natural light, this welcoming living space pairs Scandinavian-style furniture with a traditional tokonoma alcove — where East meets West in easy harmony.</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/toilet.jpg" alt="Restroom decorated with a vivid wisteria painting" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Restroom</p>
+              <h3 class="room-card__title">Restroom — A Refined Space</h3>
+              <p class="room-card__desc">A clean Western-style restroom adorned with a vibrant wisteria painting. The attention to detail here reflects the care put into every corner of Momo no Yado.</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/bedroom1.jpg" alt="Bedroom 1 with deep purple walls, gold botanical art and two double beds" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Bedroom 1</p>
+              <h3 class="room-card__title">Bedroom 1 — Spacious Double Room</h3>
+              <p class="room-card__desc">Two double beds in a generously sized room. There's plenty of floor space to open your suitcases without feeling cramped. Deep purple walls and golden botanical motifs give this room a sense of quiet drama.</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/bedroom3.jpg" alt="Bedroom 3 — warm Japanese-style room with floral pendant lamp and twin beds" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Bedroom 3</p>
+              <h3 class="room-card__title">Bedroom 3 — Lamp-lit Japanese Room</h3>
+              <p class="room-card__desc">A cozy Japanese-style room lit by a flower-shaped pendant lamp. Sliding doors connect to the adjacent room, offering flexibility for larger groups.</p>
+            </div>
+          </article>
+
+          <article class="room-card room-card--wide">
+            <div class="room-card__image-wrap">
+              <img src="images/bedroom2.jpg" alt="Bedroom 2 — traditional Japanese suite with shoji screens and gilded fusuma doors" loading="lazy" width="1200" height="800">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Bedroom 2 — Japanese Suite</p>
+              <h3 class="room-card__title">Bedroom 2 — The Japanese Suite</h3>
+              <p class="room-card__desc">Shoji screens and gilded fusuma sliding doors remain intact in this pure Japanese-style bedroom. Crisp white bedding with a soft pink accent brings a gentle freshness — tradition and novelty gracefully intertwined.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="amenities">
+          <h3 class="amenities__title">Amenities &amp; Equipment</h3>
+          <ul class="amenities__grid">
+            <li>Wi-Fi (Free)</li>
+            <li>Air conditioning (all rooms)</li>
+            <li>Bath &amp; shower</li>
+            <li>Western-style toilet</li>
+            <li>Fully equipped kitchen</li>
+            <li>Microwave &amp; refrigerator</li>
+            <li>Washing machine</li>
+            <li>Free parking</li>
+            <li>Towels &amp; amenities</li>
+            <li>Bedding included</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIDE -->
+    <section id="guide" class="section guide">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Facility Guide</p>
+          <h2 class="section__title">Guest Guide</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="guide__stats">
+          <div class="guide__stat">
+            <span class="guide__stat-num">74</span>
+            <span class="guide__stat-unit">㎡</span>
+            <span class="guide__stat-label">Floor Area</span>
+          </div>
+          <div class="guide__stat">
+            <span class="guide__stat-num">3</span>
+            <span class="guide__stat-unit">LDK</span>
+            <span class="guide__stat-label">Layout</span>
+          </div>
+          <div class="guide__stat">
+            <span class="guide__stat-num">8</span>
+            <span class="guide__stat-unit">guests</span>
+            <span class="guide__stat-label">Max Capacity</span>
+          </div>
+          <div class="guide__stat">
+            <span class="guide__stat-num">6</span>
+            <span class="guide__stat-unit">beds</span>
+            <span class="guide__stat-label">Total Beds</span>
+          </div>
+          <div class="guide__stat">
+            <span class="guide__stat-num">3</span>
+            <span class="guide__stat-unit">cars</span>
+            <span class="guide__stat-label">Free Parking</span>
+          </div>
+        </div>
+
+        <div class="guide__cols">
+
+          <!-- Left column -->
+          <div class="guide__col">
+
+            <div class="guide__block">
+              <h3 class="guide__block-title">Bedroom Details</h3>
+              <table class="guide__table">
+                <thead>
+                  <tr>
+                    <th>Room</th>
+                    <th>Bed Type</th>
+                    <th>Size</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Western Room 1</td>
+                    <td>Double × 2</td>
+                    <td>140×206 cm</td>
+                  </tr>
+                  <tr>
+                    <td>Japanese Room</td>
+                    <td>Small Double × 2</td>
+                    <td>120×206 cm</td>
+                  </tr>
+                  <tr>
+                    <td>Western Room 2</td>
+                    <td>Single × 2</td>
+                    <td>100×206 cm</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="guide__note">※ Single-story building — no stairs anywhere in the property.</p>
+            </div>
+
+            <div class="guide__block">
+              <h3 class="guide__block-title">Equipment &amp; Amenities</h3>
+              <div class="guide__equip-grid">
+                <div class="guide__equip-col">
+                  <p class="guide__equip-head">Living &amp; Dining</p>
+                  <ul>
+                    <li>Dining table (seats 8)</li>
+                    <li>49" large-screen TV</li>
+                    <li>Amazon Fire Stick (Netflix, etc.)</li>
+                    <li>Air conditioning (all rooms)</li>
+                    <li>Fiber-optic Wi-Fi (free)</li>
+                  </ul>
+                  <p class="guide__equip-note">※ No terrestrial digital TV broadcast.</p>
+                </div>
+                <div class="guide__equip-col">
+                  <p class="guide__equip-head">Kitchen</p>
+                  <ul>
+                    <li>Refrigerator / freezer</li>
+                    <li>Microwave &amp; electric kettle</li>
+                    <li>Rice cooker</li>
+                    <li>Frying pan &amp; full cookware set</li>
+                    <li>Full tableware (incl. children's)</li>
+                  </ul>
+                </div>
+                <div class="guide__equip-col">
+                  <p class="guide__equip-head">Bathroom &amp; Laundry</p>
+                  <ul>
+                    <li>Washing machine &amp; detergent</li>
+                    <li>2 hair dryers &amp; 1 hair iron</li>
+                    <li>Shampoo &amp; conditioner</li>
+                    <li>Body wash &amp; hand soap</li>
+                    <li>Bath &amp; face towels</li>
+                  </ul>
+                </div>
+                <div class="guide__equip-col">
+                  <p class="guide__equip-head">For Families (on request)</p>
+                  <ul>
+                    <li>Baby high chair</li>
+                    <li>Stroller / pushchair</li>
+                    <li>Child car seat (infant)</li>
+                  </ul>
+                  <p class="guide__equip-note">※ Please ask if you need anything else.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide__block">
+              <h3 class="guide__block-title">Parking</h3>
+              <ul class="guide__list">
+                <li>On-site free parking: 2 spaces</li>
+                <li>Nearby free parking: 1 space (3 total)</li>
+                <li>1 space is compact-car only (narrow)</li>
+                <li>For large vans or nervous parkers, nearby lot recommended</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Right column -->
+          <div class="guide__col">
+
+            <div class="guide__block">
+              <h3 class="guide__block-title">Nearby Attractions <span class="guide__block-sub">by car</span></h3>
+              <table class="guide__table guide__table--access">
+                <tbody>
+                  <tr><td>Jazz Dream Nagashima (outlet)</td><td>~14 min</td></tr>
+                  <tr><td>Nagashima Spaland</td><td>~14 min</td></tr>
+                  <tr><td>Nabana no Sato</td><td>~11 min</td></tr>
+                  <tr><td>LEGOLAND Japan</td><td>~18 min</td></tr>
+                  <tr><td>Nagoya Port Aquarium</td><td>~27 min</td></tr>
+                  <tr><td>Nagoya Station</td><td>~32 min</td></tr>
+                  <tr><td>Higashiyama Zoo &amp; Botanical Gardens</td><td>~35 min</td></tr>
+                  <tr><td>Nagoya Castle</td><td>~36 min</td></tr>
+                  <tr><td>Suzuka Circuit</td><td>~44 min</td></tr>
+                  <tr><td>Chubu Centrair International Airport</td><td>~80 min</td></tr>
+                  <tr><td>Ise Jingu Shrine</td><td>~80 min</td></tr>
+                  <tr><td>Kyoto</td><td>~90 min</td></tr>
+                  <tr><td>Osaka Expo 2025 Venue</td><td>~150 min</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="guide__block">
+              <h3 class="guide__block-title">Local Area</h3>
+              <ul class="guide__list">
+                <li>Convenience store — ~13 min walk</li>
+                <li>Supermarket — ~8 min by car</li>
+                <li>Public bath (sento) — ~10 min by car</li>
+                <li>Restaurants — within 10 min walk</li>
+              </ul>
+              <p class="guide__note">Nearest station is ~17 min on foot. <strong>We recommend arriving by car.</strong></p>
+            </div>
+
+            <div class="guide__block guide__block--highlight">
+              <h3 class="guide__block-title">Perfect for Families &amp; Groups</h3>
+              <ul class="guide__check-list">
+                <li>Completely private — no other guests</li>
+                <li>Kids can run and be noisy — no worries!</li>
+                <li>Single-story — no stairs, fully accessible</li>
+                <li>49" TV with Netflix and streaming apps</li>
+                <li>Full kitchen — ideal for longer stays</li>
+                <li>Check-in from 16:00 / Check-out until 12:00</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCESS -->
+    <section id="access" class="section access">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Access</p>
+          <h2 class="section__title">Access</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </div>
+        <div class="access__grid">
+          <div class="access__info">
+            <dl class="access__dl">
+              <dt>Location</dt>
+              <dd>Kuwana City, Mie Prefecture<br><small>(Exact address provided after booking)</small></dd>
+              <dt>Nearby Spots</dt>
+              <dd>
+                <ul class="access__spots">
+                  <li>
+                    <span class="access__spot-icon" aria-hidden="true">&#9654;</span>
+                    <span><strong>Nagashima Spaland</strong> — ~14 min by car</span>
+                  </li>
+                  <li>
+                    <span class="access__spot-icon" aria-hidden="true">&#9654;</span>
+                    <span><strong>Nabana no Sato</strong> — ~11 min by car</span>
+                  </li>
+                  <li>
+                    <span class="access__spot-icon" aria-hidden="true">&#9654;</span>
+                    <span><strong>Nagoya Station</strong> — ~32 min by car</span>
+                  </li>
+                  <li>
+                    <span class="access__spot-icon" aria-hidden="true">&#9654;</span>
+                    <span><strong>LEGOLAND Japan</strong> — ~18 min by car</span>
+                  </li>
+                </ul>
+              </dd>
+              <dt>Parking</dt>
+              <dd>Free on-site parking (multiple spaces)</dd>
+              <dt>Check-in</dt>
+              <dd>From 16:00</dd>
+              <dt>Check-out</dt>
+              <dd>By 12:00</dd>
+            </dl>
+          </div>
+          <div class="access__map">
+            <div class="access__map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800!2d136.6759381!3d35.0521523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60039b1fd53d8e8f%3A0x9227cebfe5deebc1!2z44CQ55m96Ymy44CR!5e0!3m2!1sja!2sjp!4v1"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Map around Momo no Yado"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTICE -->
+    <section id="notice" class="section notice">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Important Notice</p>
+          <h2 class="section__title">Important Notice</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="notice__warning">
+          <div class="notice__warning-icon" aria-hidden="true">!</div>
+          <div class="notice__warning-body">
+            <h3>Traffic Noise Advisory</h3>
+            <p>
+              Momo no Yado is located along a <strong>busy national highway</strong>.<br>
+              <strong>Road noise from cars and trucks</strong> can be heard inside the property at all hours, day and night.<br>
+              If you are sensitive to noise or require a very quiet environment, please take this into consideration before booking.
+            </p>
+            <p class="notice__warning-merit">
+              On the other hand, this location offers <strong>excellent access to all major attractions</strong> in the area — ideal for guests who want to pack in as many experiences as possible!
+            </p>
+          </div>
+        </div>
+
+        <div class="notice__cols">
+
+          <div class="notice__block">
+            <h3 class="notice__block-title">House Rules</h3>
+            <ul class="notice__rule-list">
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span><strong>No smoking</strong> inside the property</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>Please <strong>remove shoes</strong> at the entrance</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>Please <strong>sort your rubbish</strong> into the designated bins</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>Do not leave personal belongings outside the property</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>Please <strong>do not enter the storage shed</strong> adjacent to the house</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span><strong>Damage or soiling</strong> of furniture or equipment may be charged separately</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon notice__rule-icon--warn">!</span>
+                <span>In the event of <strong>vomiting due to excessive alcohol</strong>, a flat cleaning fee of ¥50,000 will be charged</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>No mid-stay cleaning service. For extended stays, additional cleaning can be arranged on request</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>One set of sheets and towels per person. Please use the washing machine as needed.<br><small>Extra bedding stored in closets is not for guest use.</small></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="notice__block">
+            <h3 class="notice__block-title">Guest Information Requirements</h3>
+            <p class="notice__legal-lead">
+              Under Japan's <strong>Private Lodging Business Act</strong> (enforced June 2018) and the <strong>Inn and Hotel Business Act</strong>, hosts are legally required to collect information from all guests.
+            </p>
+            <p class="notice__legal-sub">Please provide the following information by the day before check-in:</p>
+            <ul class="notice__legal-list">
+              <li>Full name, home address, occupation, and nationality of all guests</li>
+              <li>For non-Japanese nationals: passport number and a clear photo of your passport, plus a photo of your face</li>
+            </ul>
+            <div class="notice__legal-warning">
+              If the required information is not received by the day before check-in, we may be required by law to cancel or refuse your stay.
+            </div>
+            <p class="notice__privacy">
+              Your personal information will not be disclosed, sold, or shared with third parties without your consent. However, we may be legally obligated to provide information to courts, police, or government authorities when required by law.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section reviews-section">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Guest Reviews</p>
+          <h2 class="section__title">Reviews</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </div>
+        <div class="reviews__summary" id="reviews-summary">
+          <div class="reviews__avg-score" id="reviews-avg">—</div>
+          <div class="reviews__avg-stars" id="reviews-stars" aria-label="Rating"></div>
+          <div class="reviews__avg-count" id="reviews-count"></div>
+          <div class="reviews__platforms" id="reviews-platforms"></div>
+        </div>
+        <div class="reviews__grid" id="reviews-grid" aria-live="polite">
+          <p class="reviews__loading">Loading reviews…</p>
+        </div>
+        <p class="reviews__note">
+          ※ Reviews are sourced from Airbnb and Booking.com and updated manually.
+        </p>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking" class="section booking">
+      <div class="booking__bg" aria-hidden="true"></div>
+      <div class="booking__overlay" aria-hidden="true"></div>
+      <div class="container booking__container">
+        <div class="section__header">
+          <p class="section__eyebrow">Reservation</p>
+          <h2 class="section__title">Book Your Stay</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </div>
+        <div class="booking__content">
+          <p class="booking__desc">
+            Reservations are accepted through Airbnb.<br>
+            Please check availability and pricing on our Airbnb listing.
+          </p>
+          <div class="booking__cta-wrap">
+            <a href="https://www.airbnb.jp/rooms/1250385999537619920"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn--primary btn--large">
+              Book on Airbnb
+            </a>
+            <p class="booking__note">
+              For enquiries, please use the Airbnb messaging feature.
+            </p>
+          </div>
+          <div class="booking__cards">
+            <div class="booking__card">
+              <div class="booking__card-num">08</div>
+              <strong class="booking__card-title">Up to 8 Guests</strong>
+              <span class="booking__card-desc">Perfect for families &amp; group trips</span>
+            </div>
+            <div class="booking__card">
+              <div class="booking__card-num">全</div>
+              <strong class="booking__card-title">Entire House</strong>
+              <span class="booking__card-desc">100% private — just your group</span>
+            </div>
+            <div class="booking__card">
+              <div class="booking__card-num">P</div>
+              <strong class="booking__card-title">Free Parking</strong>
+              <span class="booking__card-desc">Convenient for road trips</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo-wrap">
+          <a href="#" class="footer__logo">
+            <span class="logo-ja">百の宿</span>
+            <span class="logo-en">MOMO NO YADO — Nagashima &amp; Nagoya</span>
+          </a>
+          <p class="footer__tagline">Kuwana, Mie — Entire Traditional Farmhouse Rental</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <ul>
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#guide">Guide</a></li>
+            <li><a href="#access">Access</a></li>
+            <li><a href="#notice">Notice</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#booking">Book Now</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Momo no Yado All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

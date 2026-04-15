@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="三重県桑名市の古民家貸切宿。ナガシマスパーランドから車で約5分。最大8名様まで。他のゲストと交わることのない、プライベートな一棟貸切の宿。">
+  <meta property="og:title" content="百の宿 -Momo no yado- | 桑名・古民家貸切宿">
+  <meta property="og:description" content="三重県桑名市の古民家貸切宿。ナガシマスパーランドから車で約5分。最大8名様。一棟貸切。">
+  <meta property="og:type" content="website">
+  <title>百の宿 -Momo no yado- | 桑名・古民家貸切宿</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .lang-switcher {
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+      margin-left: 1.5rem;
+    }
+    .lang-btn {
+      font-family: var(--font-en);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      padding: 0.25rem 0.6rem;
+      border: 1px solid rgba(201,169,110,0.4);
+      color: var(--color-text-muted);
+      text-decoration: none;
+      border-radius: 2px;
+      transition: all 0.2s;
+    }
+    .lang-btn:hover { color: var(--color-gold); border-color: var(--color-gold); }
+    .lang-btn--active { color: var(--color-gold); border-color: var(--color-gold); }
+    .header__inner { display: flex; align-items: center; }
+    @media (max-width: 768px) {
+      .lang-switcher { margin-left: auto; margin-right: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Auto language detection -->
+  <script>
+    if (!sessionStorage.getItem('lang-chosen')) {
+      var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+      if (lang.startsWith('en')) {
+        sessionStorage.setItem('lang-chosen', 'en');
+        window.location.href = 'en.html';
+      }
+    }
+  </script>
+
+  <!-- HEADER -->
+  <header id="site-header" class="header header--transparent">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <span class="logo-ja">百の宿</span>
+        <span class="logo-en">MOMO NO YADO — Nagashima &amp; Nagoya</span>
+      </a>
+      <button class="header__menu-toggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header__nav" role="navigation" aria-label="メインナビゲーション">
+        <ul>
+          <li><a href="#concept">コンセプト</a></li>
+          <li><a href="#rooms">お部屋・施設</a></li>
+          <li><a href="#guide">ご利用案内</a></li>
+          <li><a href="#access">アクセス</a></li>
+          <li><a href="#notice">注意事項</a></li>
+          <li><a href="#reviews">口コミ</a></li>
+          <li><a href="#booking" class="nav-cta">ご予約</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switcher">
+        <a href="index.html" class="lang-btn lang-btn--active">日本語</a>
+        <a href="en.html" class="lang-btn">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-label="メインビジュアル">
+      <div class="hero__slideshow">
+        <div class="hero__slide hero__slide--active" data-src="images/exterior.jpg" aria-hidden="true"></div>
+        <div class="hero__slide" data-src="images/entrance.jpg" aria-hidden="true"></div>
+        <div class="hero__slide" data-src="images/dining-night.jpg" aria-hidden="true"></div>
+        <div class="hero__slide" data-src="images/dining-day.jpg" aria-hidden="true"></div>
+        <div class="hero__slide" data-src="images/bedroom1.jpg" aria-hidden="true"></div>
+        <div class="hero__slide" data-src="images/bedroom3.jpg" aria-hidden="true"></div>
+        <div class="hero__slide" data-src="images/bedroom2.jpg" aria-hidden="true"></div>
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Nagashima &amp; Nagoya</p>
+        <h1 class="hero__title">百の宿</h1>
+        <p class="hero__reading">Momo no yado</p>
+        <p class="hero__subtitle">古き良き日本の暮らしを、<br>あなただけの空間で。</p>
+        <a href="#booking" class="btn btn--primary">ご予約・空き確認</a>
+      </div>
+      <div class="hero__dots" aria-label="スライドナビゲーション">
+        <button class="hero__dot hero__dot--active" aria-label="スライド1"></button>
+        <button class="hero__dot" aria-label="スライド2"></button>
+        <button class="hero__dot" aria-label="スライド3"></button>
+        <button class="hero__dot" aria-label="スライド4"></button>
+        <button class="hero__dot" aria-label="スライド5"></button>
+        <button class="hero__dot" aria-label="スライド6"></button>
+        <button class="hero__dot" aria-label="スライド7"></button>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>SCROLL</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- CONCEPT -->
+    <section id="concept" class="section concept">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Our Concept</p>
+          <h2 class="section__title">古民家が紡ぐ、<br>もうひとつの日常</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </div>
+        <div class="concept__grid">
+          <div class="concept__text">
+            <p class="concept__lead">
+              百の宿は、桑名市に佇む古民家を丁寧に再生した、<br>一棟貸切の宿です。
+            </p>
+            <p class="concept__body">
+              重厚な梁と土壁の温もり。先人たちが大切に守り続けた空間に、現代の快適さを自然に溶け込ませました。
+            </p>
+            <p class="concept__body">
+              ナガシマスパーランドまで車でわずか14分。賑やかな一日を過ごした後は、百の宿でゆっくりとくつろいでください。旅の仲間と囲む食卓、それぞれの寝室でのひととき——ここでの記憶が、旅をより豊かなものにしてくれることでしょう。
+            </p>
+            <ul class="concept__pillars">
+              <li class="pillar">
+                <span class="pillar__icon" aria-hidden="true">一</span>
+                <div class="pillar__text">
+                  <strong>一棟貸切</strong>
+                  <span>最大8名まで。他のお客様を気にせずプライベートな時間を。</span>
+                </div>
+              </li>
+              <li class="pillar">
+                <span class="pillar__icon" aria-hidden="true">古</span>
+                <div class="pillar__text">
+                  <strong>古民家の佇まい</strong>
+                  <span>残された梁や土壁に、昔の暮らしの温もりが宿ります。</span>
+                </div>
+              </li>
+              <li class="pillar">
+                <span class="pillar__icon" aria-hidden="true">新</span>
+                <div class="pillar__text">
+                  <strong>現代の快適さ</strong>
+                  <span>バス・トイレ・空調・Wi-Fiを完備。不便なく、美しく。</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="concept__image-wrap">
+            <img src="images/dining-day.jpg" alt="百の宿のリビングダイニング。明るい日光の差し込む開放的な空間と北欧家具" loading="lazy" width="640" height="800">
+            <div class="concept__image-accent" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOMS & FACILITIES -->
+    <section id="rooms" class="section rooms">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Facilities &amp; Rooms</p>
+          <h2 class="section__title">お部屋・施設</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+          <p class="section__desc">全室を一組様専用でご用意いたします。</p>
+        </div>
+        <div class="rooms__grid">
+
+          <article class="room-card room-card--wide">
+            <div class="room-card__image-wrap">
+              <img src="images/entrance.jpg" alt="百の宿の玄関。丸窓と竹格子、花活け。土間の奥に続く古民家の空間" loading="lazy" width="900" height="1200">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Entrance — Genkan</p>
+              <h3 class="room-card__title">玄関 — 旅の始まり</h3>
+              <p class="room-card__desc">丸窓から差し込む柔らかな光。竹格子と土壁が出迎える玄関は、訪れるたびに「帰ってきた」と感じさせる、百の宿の顔です。土間でまず一息ついてください。</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/exterior.jpg" alt="百の宿の外観。伝統的な瓦屋根と黒いガルバリウム外壁、木製の玄関扉" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Exterior</p>
+              <h3 class="room-card__title">外観 — 平屋の佇まい</h3>
+              <p class="room-card__desc">重厚な瓦屋根を戴いた、階段のない平屋の一軒家。小さなお子様やご年配の方も安心してお過ごしいただける、フラットな造りです。木製の玄関扉を開けば、時代を超えた空間が広がります。</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/kitchen.jpg" alt="百の宿のキッチン。広いシンク、ガスコンロ、電子レンジ、炊飯器など調理器具完備" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Kitchen</p>
+              <h3 class="room-card__title">キッチン — 家族の台所</h3>
+              <p class="room-card__desc">広々としたシンクとガスコンロ、冷凍冷蔵庫・電子レンジ・炊飯器・各種調理器具・食器類を完備。8名分の食事も楽々準備できる、使いやすい台所です。</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/dining-night.jpg" alt="夜のダイニングルーム。和紙のペンダントランプが灯る8人掛けテーブル" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Dining Room — Evening</p>
+              <h3 class="room-card__title">ダイニング — 夜の宴</h3>
+              <p class="room-card__desc">8名が囲める大きなダイニングテーブル。和紙のペンダントランプがやわらかな光を落とし、特別な夜のひとときを演出します。</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/dining-day.jpg" alt="昼のリビングダイニング。陽光差し込む明るく開放的な空間と床の間" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Living &amp; Dining — Daytime</p>
+              <h3 class="room-card__title">リビング — 日々の寛ぎ</h3>
+              <p class="room-card__desc">陽光が差し込む明るいリビング。北欧家具と床の間が共存する、和洋の垣根を超えた居心地のよい空間です。</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/toilet.jpg" alt="トイレ。藤の花を描いた鮮やかな絵画と清潔な洋式トイレ" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Restroom</p>
+              <h3 class="room-card__title">トイレ — 凜とした一間</h3>
+              <p class="room-card__desc">藤の花を描いた鮮やかな絵が飾られた清潔なトイレ。細部にまで宿のこだわりが息づいています。</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/bedroom1.jpg" alt="寝室1。深みのあるパープルの壁と金色のボタニカルアート装飾、ツインベッド" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Bedroom 1</p>
+              <h3 class="room-card__title">寝室1 — ゆとりのダブルルーム</h3>
+              <p class="room-card__desc">ダブルベッドを2台備えた、ゆとりある寝室。広いフロアスペースにはスーツケースも余裕で広げられます。深みのある紫の壁と金色の植物モチーフが、特別感のある空間を演出します。</p>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__image-wrap">
+              <img src="images/bedroom3.jpg" alt="寝室3。温かみのある和室。花形ペンダントランプと白い寝具のツインベッド" loading="lazy" width="800" height="533">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Bedroom 3</p>
+              <h3 class="room-card__title">寝室3 — 灯りの和室</h3>
+              <p class="room-card__desc">花形ペンダントランプが柔らかく照らす和室。隣室と繋がる引き戸が、グループ利用の自由度を高めます。</p>
+            </div>
+          </article>
+
+          <article class="room-card room-card--wide">
+            <div class="room-card__image-wrap">
+              <img src="images/bedroom2.jpg" alt="寝室2。伝統的な和室。障子と金彩の描かれた襖、白い寝具とピンクのアクセント" loading="lazy" width="1200" height="800">
+            </div>
+            <div class="room-card__body">
+              <p class="room-card__en">Bedroom 2 — Japanese Suite</p>
+              <h3 class="room-card__title">寝室2 — 和の間</h3>
+              <p class="room-card__desc">障子と金彩の描かれた襖が残る純和風の寝室。白い寝具とほのかなピンクのアクセントが懐かしさと新しさを結びます。日本の美意識が凝縮された一室です。</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="amenities">
+          <h3 class="amenities__title">設備・備品</h3>
+          <ul class="amenities__grid">
+            <li>Wi-Fi（無料）</li>
+            <li>エアコン（全室）</li>
+            <li>バス・シャワー</li>
+            <li>トイレ（洋式）</li>
+            <li>キッチン設備</li>
+            <li>電子レンジ・冷蔵庫</li>
+            <li>洗濯機</li>
+            <li>駐車場（無料）</li>
+            <li>タオル・アメニティ</li>
+            <li>寝具一式</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIDE -->
+    <section id="guide" class="section guide">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Facility Guide</p>
+          <h2 class="section__title">ご利用案内</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </div>
+
+        <!-- 施設概要 stats -->
+        <div class="guide__stats">
+          <div class="guide__stat">
+            <span class="guide__stat-num">74</span>
+            <span class="guide__stat-unit">㎡</span>
+            <span class="guide__stat-label">施設面積</span>
+          </div>
+          <div class="guide__stat">
+            <span class="guide__stat-num">3</span>
+            <span class="guide__stat-unit">LDK</span>
+            <span class="guide__stat-label">間取り</span>
+          </div>
+          <div class="guide__stat">
+            <span class="guide__stat-num">8</span>
+            <span class="guide__stat-unit">名</span>
+            <span class="guide__stat-label">最大定員</span>
+          </div>
+          <div class="guide__stat">
+            <span class="guide__stat-num">6</span>
+            <span class="guide__stat-unit">台</span>
+            <span class="guide__stat-label">ベッド数</span>
+          </div>
+          <div class="guide__stat">
+            <span class="guide__stat-num">3</span>
+            <span class="guide__stat-unit">台</span>
+            <span class="guide__stat-label">無料駐車場</span>
+          </div>
+        </div>
+
+        <div class="guide__cols">
+
+          <!-- 左カラム -->
+          <div class="guide__col">
+
+            <!-- 寝室詳細 -->
+            <div class="guide__block">
+              <h3 class="guide__block-title">寝室詳細</h3>
+              <table class="guide__table">
+                <thead>
+                  <tr>
+                    <th>お部屋</th>
+                    <th>ベッドタイプ</th>
+                    <th>サイズ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>洋室1</td>
+                    <td>ダブルベッド × 2台</td>
+                    <td>140×206 cm</td>
+                  </tr>
+                  <tr>
+                    <td>和室</td>
+                    <td>スモールダブル × 2台</td>
+                    <td>120×206 cm</td>
+                  </tr>
+                  <tr>
+                    <td>洋室2</td>
+                    <td>シングルベッド × 2台</td>
+                    <td>100×206 cm</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="guide__note">※ 平屋建て。館内に階段はありません。</p>
+            </div>
+
+            <!-- 設備備品 -->
+            <div class="guide__block">
+              <h3 class="guide__block-title">設備・備品</h3>
+              <div class="guide__equip-grid">
+                <div class="guide__equip-col">
+                  <p class="guide__equip-head">リビング・ダイニング</p>
+                  <ul>
+                    <li>ダイニングテーブル（8名用）</li>
+                    <li>49インチ大型テレビ</li>
+                    <li>Amazon Fire Stick（Netflix等）</li>
+                    <li>全室エアコン完備</li>
+                    <li>固定Wi-Fi（光回線）</li>
+                  </ul>
+                  <p class="guide__equip-note">※ 地上デジタル放送は非対応。</p>
+                </div>
+                <div class="guide__equip-col">
+                  <p class="guide__equip-head">キッチン</p>
+                  <ul>
+                    <li>冷蔵冷凍庫</li>
+                    <li>電子レンジ・電気ケトル</li>
+                    <li>炊飯器</li>
+                    <li>フライパン・調理器具一式</li>
+                    <li>食器類一式（子供用含む）</li>
+                  </ul>
+                </div>
+                <div class="guide__equip-col">
+                  <p class="guide__equip-head">バス・洗面・トイレ</p>
+                  <ul>
+                    <li>洗濯機・洗濯洗剤</li>
+                    <li>ドライヤー2台・ヘアアイロン1台</li>
+                    <li>シャンプー・コンディショナー</li>
+                    <li>ボディソープ・ハンドソープ</li>
+                    <li>バスタオル・フェイスタオル</li>
+                  </ul>
+                </div>
+                <div class="guide__equip-col">
+                  <p class="guide__equip-head">子供用品（要予約）</p>
+                  <ul>
+                    <li>ベビーハイチェア</li>
+                    <li>ベビーカー</li>
+                    <li>チャイルドシート（ベビー用）</li>
+                  </ul>
+                  <p class="guide__equip-note">※ その他必要なものはご相談ください。</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 駐車場 -->
+            <div class="guide__block">
+              <h3 class="guide__block-title">駐車場</h3>
+              <ul class="guide__list">
+                <li>施設敷地内　無料2台</li>
+                <li>近隣無料駐車場　1台（合計3台利用可）</li>
+                <li>うち1台はコンパクトカーまで（狭め）</li>
+                <li>大型ワンボックス・車庫入れに不安な方は近隣駐車場をご案内します</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- 右カラム -->
+          <div class="guide__col">
+
+            <!-- 観光地アクセス -->
+            <div class="guide__block">
+              <h3 class="guide__block-title">観光地へのアクセス <span class="guide__block-sub">by car</span></h3>
+              <table class="guide__table guide__table--access">
+                <tbody>
+                  <tr><td>ジャズドリーム長島</td><td>約14分</td></tr>
+                  <tr><td>ナガシマスパーランド</td><td>約14分</td></tr>
+                  <tr><td>なばなの里</td><td>約11分</td></tr>
+                  <tr><td>レゴランド・ジャパン</td><td>約18分</td></tr>
+                  <tr><td>名古屋港水族館</td><td>約27分</td></tr>
+                  <tr><td>名古屋駅</td><td>約32分</td></tr>
+                  <tr><td>東山動植物園</td><td>約35分</td></tr>
+                  <tr><td>名古屋城</td><td>約36分</td></tr>
+                  <tr><td>鈴鹿サーキット</td><td>約44分</td></tr>
+                  <tr><td>中部国際空港（セントレア）</td><td>約80分</td></tr>
+                  <tr><td>伊勢神宮</td><td>約80分</td></tr>
+                  <tr><td>京都</td><td>約90分</td></tr>
+                  <tr><td>大阪万博2025会場</td><td>約150分</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 近隣情報 -->
+            <div class="guide__block">
+              <h3 class="guide__block-title">近隣情報</h3>
+              <ul class="guide__list">
+                <li>コンビニ — 徒歩約13分</li>
+                <li>スーパーマーケット — 車で約8分</li>
+                <li>銭湯 — 車で約10分</li>
+                <li>飲食店 — 徒歩10分圏内</li>
+              </ul>
+              <p class="guide__note">最寄り駅から徒歩約17分。<strong>お車でのお越しをおすすめします。</strong></p>
+            </div>
+
+            <!-- ファミリーおすすめ -->
+            <div class="guide__block guide__block--highlight">
+              <h3 class="guide__block-title">家族・グループにぴったりの理由</h3>
+              <ul class="guide__check-list">
+                <li>完全貸切で他のゲストはいません</li>
+                <li>子供が泣いても騒いでもOK！</li>
+                <li>平屋なので階段の心配なし</li>
+                <li>49型TVでNetflixなど動画視聴可</li>
+                <li>調理器具完備で長期滞在も歓迎</li>
+                <li>チェックイン16:00〜チェックアウト12:00の長時間滞在</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCESS -->
+    <section id="access" class="section access">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Access</p>
+          <h2 class="section__title">アクセス</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </div>
+        <div class="access__grid">
+          <div class="access__info">
+            <dl class="access__dl">
+              <dt>所在地</dt>
+              <dd>三重県桑名市<br><small>（詳細はご予約後にお知らせします）</small></dd>
+              <dt>近隣スポット</dt>
+              <dd>
+                <ul class="access__spots">
+                  <li>
+                    <span class="access__spot-icon" aria-hidden="true">&#9654;</span>
+                    <span><strong>ナガシマスパーランド</strong> — 車で約14分</span>
+                  </li>
+                  <li>
+                    <span class="access__spot-icon" aria-hidden="true">&#9654;</span>
+                    <span><strong>なばなの里</strong> — 車で約11分</span>
+                  </li>
+                  <li>
+                    <span class="access__spot-icon" aria-hidden="true">&#9654;</span>
+                    <span><strong>名古屋駅</strong> — 車で約32分</span>
+                  </li>
+                  <li>
+                    <span class="access__spot-icon" aria-hidden="true">&#9654;</span>
+                    <span><strong>レゴランド</strong> — 車で約18分</span>
+                  </li>
+                </ul>
+              </dd>
+              <dt>駐車場</dt>
+              <dd>無料・敷地内（複数台可）</dd>
+              <dt>チェックイン</dt>
+              <dd>16:00〜</dd>
+              <dt>チェックアウト</dt>
+              <dd>〜12:00</dd>
+            </dl>
+          </div>
+          <div class="access__map">
+            <div class="access__map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800!2d136.6759381!3d35.0521523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60039b1fd53d8e8f%3A0x9227cebfe5deebc1!2z44CQ55m96Ymy44CR!5e0!3m2!1sja!2sjp!4v1"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="百の宿 周辺地図"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTICE -->
+    <section id="notice" class="section notice">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Important Notice</p>
+          <h2 class="section__title">ご注意事項</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </div>
+
+        <!-- 騒音警告 -->
+        <div class="notice__warning">
+          <div class="notice__warning-icon" aria-hidden="true">!</div>
+          <div class="notice__warning-body">
+            <h3>交通騒音についてのご案内</h3>
+            <p>
+              当宿泊施設は、<strong>交通量の多い国道沿い</strong>に位置しています。<br>
+              室内にいても、昼夜を問わず<strong>車やトラックの走行音・各種騒音</strong>が聞こえます。<br>
+              静かな環境でお過ごしになりたい方や、騒音に敏感な方は、あらかじめご了承の上でご予約ください。
+            </p>
+            <p class="notice__warning-merit">
+              一方で、大通り沿いという立地のため<strong>各地へのアクセスは抜群</strong>です。アクティブに旅を楽しみたい方には特におすすめです！
+            </p>
+          </div>
+        </div>
+
+        <div class="notice__cols">
+
+          <!-- ルール -->
+          <div class="notice__block">
+            <h3 class="notice__block-title">ご利用ルール</h3>
+            <ul class="notice__rule-list">
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>室内は<strong>禁煙</strong>です</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>室内は<strong>靴を脱いで</strong>お過ごしください</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>ゴミは<strong>分別</strong>してゴミ箱へ入れてください</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>屋外に私物を放置しないでください</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>宿泊施設横の<strong>倉庫への立ち入りはご遠慮</strong>ください</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>家具・設備・備品の<strong>破損・汚損は別途費用</strong>をご請求する場合があります</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon notice__rule-icon--warn">!</span>
+                <span>飲み会利用で<strong>嘔吐の痕跡があった場合、処理代として一律5万円</strong>を請求いたします</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>滞在中の清掃はありません。長期滞在で追加清掃ご希望の場合はご相談ください</span>
+              </li>
+              <li>
+                <span class="notice__rule-icon">●</span>
+                <span>シーツ・タオルは各1セットです。お好きなタイミングで洗濯ください。<br><small>押し入れ収納内のシーツ等は備品のため使用不可です</small></span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 法的要件 -->
+          <div class="notice__block">
+            <h3 class="notice__block-title">宿泊者情報の提供について</h3>
+            <p class="notice__legal-lead">
+              2018年6月施行「<strong>住宅宿泊事業法</strong>」および「<strong>旅館業法</strong>」に基づき、全宿泊者の情報提供が義務付けられています。
+            </p>
+            <p class="notice__legal-sub">チェックイン前日までに以下の情報をご提供ください：</p>
+            <ul class="notice__legal-list">
+              <li>宿泊者全員の氏名・住所・職業・国籍</li>
+              <li>外国籍の方：パスポート番号・パスポートの鮮明な写真・本人顔写真</li>
+            </ul>
+            <div class="notice__legal-warning">
+              前日までにご提供いただけない場合、法律に基づき予約または宿泊をお断りする可能性があります。
+            </div>
+            <p class="notice__privacy">
+              個人情報はご本人の許可なく第三者への開示・提供・販売・委託・共有を行いません。ただし、裁判所・警察・行政機関等からの法的義務を伴う照会には法令に基づき情報を提供する場合があります。
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section reviews-section">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Guest Reviews</p>
+          <h2 class="section__title">口コミ</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </div>
+        <!-- 平均評価サマリー -->
+        <div class="reviews__summary" id="reviews-summary">
+          <div class="reviews__avg-score" id="reviews-avg">—</div>
+          <div class="reviews__avg-stars" id="reviews-stars" aria-label="評価"></div>
+          <div class="reviews__avg-count" id="reviews-count"></div>
+          <div class="reviews__platforms" id="reviews-platforms"></div>
+        </div>
+        <!-- 口コミカードグリッド（JSで生成） -->
+        <div class="reviews__grid" id="reviews-grid" aria-live="polite">
+          <p class="reviews__loading">口コミを読み込んでいます…</p>
+        </div>
+        <p class="reviews__note">
+          ※ 口コミはAirbnb・Booking.comから手動で追加しています。<code>reviews.json</code> を編集すると反映されます。
+        </p>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking" class="section booking">
+      <div class="booking__bg" aria-hidden="true"></div>
+      <div class="booking__overlay" aria-hidden="true"></div>
+      <div class="container booking__container">
+        <div class="section__header">
+          <p class="section__eyebrow">Reservation</p>
+          <h2 class="section__title">ご予約</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </div>
+        <div class="booking__content">
+          <p class="booking__desc">
+            ご予約はAirbnbよりお受けしております。<br>
+            空き状況の確認、料金詳細もAirbnbページにてご確認いただけます。
+          </p>
+          <div class="booking__cta-wrap">
+            <a href="https://www.airbnb.jp/rooms/1250385999537619920"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn--primary btn--large">
+              Airbnbで予約する
+            </a>
+            <p class="booking__note">
+              ご不明な点はAirbnbのメッセージ機能よりお問い合わせください。
+            </p>
+          </div>
+          <div class="booking__cards">
+            <div class="booking__card">
+              <div class="booking__card-num">08</div>
+              <strong class="booking__card-title">最大8名</strong>
+              <span class="booking__card-desc">ご家族・グループ旅行に最適</span>
+            </div>
+            <div class="booking__card">
+              <div class="booking__card-num">全</div>
+              <strong class="booking__card-title">一棟貸切</strong>
+              <span class="booking__card-desc">プライベートな空間を丸ごと</span>
+            </div>
+            <div class="booking__card">
+              <div class="booking__card-num">P</div>
+              <strong class="booking__card-title">無料駐車場</strong>
+              <span class="booking__card-desc">お車でのアクセスに便利</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo-wrap">
+          <a href="#" class="footer__logo">
+            <span class="logo-ja">百の宿</span>
+            <span class="logo-en">MOMO NO YADO — Nagashima &amp; Nagoya</span>
+          </a>
+          <p class="footer__tagline">三重県桑名市 — 古民家一棟貸切宿</p>
+        </div>
+        <nav class="footer__nav" aria-label="フッターナビゲーション">
+          <ul>
+            <li><a href="#concept">コンセプト</a></li>
+            <li><a href="#rooms">お部屋・施設</a></li>
+            <li><a href="#guide">ご利用案内</a></li>
+            <li><a href="#access">アクセス</a></li>
+            <li><a href="#notice">注意事項</a></li>
+            <li><a href="#reviews">口コミ</a></li>
+            <li><a href="#booking">ご予約</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 百の宿 All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
